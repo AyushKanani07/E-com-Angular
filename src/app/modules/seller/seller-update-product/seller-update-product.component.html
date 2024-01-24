@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<div class="pb-[21px]">
+    <div class="flex flex-col justify-center flex-wrap mx-auto content-center max-w-[1700px] w-[60%] mt-[4px]">
+        <h1 class="text-center mb-0">Update Product</h1>
+        <p class="text-green-500 text-[21px]">{{updateMessage}}</p>
+        <form #updateProduct="ngForm" (ngSubmit)="submit(updateProduct.value)" class="text-center w-[70%] flex flex-wrap flex-col mt-[4px]">
+            <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Enter your product name" name="name" ngModel="{{productData?.name}}">
+                <mat-icon matSuffix><span class="material-symbols-outlined">inventory</span></mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Image</mat-label>
+                <input matInput placeholder="Enter the url of your product Image" name="image" ngModel="{{productData?.image}}">
+                <mat-icon matSuffix><span class="material-symbols-outlined">imagesmode</span></mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+            <div class="grid grid-flow-col grid-cols-4 gap-1">
+                <mat-form-field floatLabel="always" class="col-span-3" >
+                    <mat-label>Price</mat-label>
+                    <input matInput type="number" name="price" required class="example-right-align" placeholder="0" ngModel="{{productData?.price}}">
+                  </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Currency</mat-label>
+                    <mat-select name="currency" placeholder="Currency" ngModel="{{productData?.currency}}">
+                        <mat-option *ngFor="let currency of curriencies" [value]="currency.value">{{currency.viewValue}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <mat-form-field appearance="fill">
+                <mat-label>Category</mat-label>
+                <input matInput placeholder="e.g Shopping, Capital goods, Raw materials, Accessory equipment" name="category" ngModel="{{productData?.category}}">
+                <mat-icon matSuffix><span class="material-symbols-outlined">category</span></mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Product Description</mat-label>
+                <textarea matInput type="text" name="description" placeholder="write atleast 100 words" ngModel="{{productData?.description}}"></textarea>
+            </mat-form-field>
+            <button type="submit" mat-raised-button color="primary">Update Product</button>
+        </form>
+    </div>
+</div>

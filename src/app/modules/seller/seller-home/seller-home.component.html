@@ -1,0 +1,26 @@
+<div>
+  <div>
+    <h1 class="text-center font-semibold">Products List</h1>
+    <div class="h-[21px]">
+      <p class="text-red-500 text-center">{{productDeleteMessage}}</p>
+    </div>
+    <div class="flex flex-wrap flex-row justify-center gap-[12px]">
+      <mat-card class="max-w-[270px]" *ngFor="let product of productList">
+        <mat-card-header>
+                <mat-card-title class="overflow-hidden h-[38px]">{{product.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image class="h-[300px] w-[260px]" src={{product.image}} alt="Photo of a Shiba Inu">
+        <mat-card-content class="mt-[9px]">
+          <p> {{product.category}} </p>
+          <p> Price: {{product.price + ' ' + product.currency}} </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>Details</button>
+          <button mat-button>SHARE</button>
+          <button mat-button (click)="deleteProduct(product.id)">DELETE</button>
+          <button mat-button><a routerLink="/seller-update-product/{{product.id}}">Update</a></button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

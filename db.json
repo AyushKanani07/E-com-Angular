@@ -1,0 +1,181 @@
+{
+  "seller": [
+    {
+      "id": "9bd8",
+      "name": "Jack",
+      "email": "jackhuf@gmail.com",
+      "password": "Jack@123"
+    },
+    {
+      "id": "ae9f",
+      "name": "Peter Paker",
+      "email": "petpak@gmail.com",
+      "password": "Peter@123"
+    },
+    {
+      "id": "1b4d",
+      "name": "smit",
+      "email": "s@gm",
+      "password": "12345"
+    }
+  ],
+  "users": [
+    {
+      "id": "46d0",
+      "name": "Smit",
+      "email": "smit@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "b2f2",
+      "name": "Aryan",
+      "email": "aryan@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "cc61",
+      "name": "Ram Chaturvedi",
+      "email": "Ram@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "products": [
+    {
+      "id": "bfa5",
+      "name": "Samsung Galaxy S24 ultra",
+      "image": "https://www.thetechoutlook.com/wp-content/uploads/2023/11/Samsung-Galaxy-S24-Ultra-Recent-Renders-Wrong-2.jpg",
+      "price": 121000,
+      "currency": "INR",
+      "description": "This new rumor suggests that Samsung has taken inspiration from the iPhone 15 series and will feature a 24MP default camera resolution on the Galaxy S24 Ultra. This is a significant upgrade from the current Galaxy S23 Ultra, which has a default camera resolution of 12MP.",
+      "category": "mobile"
+    },
+    {
+      "id": "43e0",
+      "name": "Playstation(PS5) DISC Edition",
+      "image": "https://m.media-amazon.com/images/I/61lIaAl5ohL._SX679_.jpg",
+      "price": 90000,
+      "currency": "INR",
+      "category": "GADGETS",
+      "description": "Make your Device stand out from the crowd with us. We are sure you'll have fun choosing your desired design and texture for your Device. Our high-quality skins are designed to be resistant to fingerprints and smudges. The texture on the skin makes it resistant to fingerprints or Dirt and will protect your Devices from dirt & scratches. From our wide range of designs to choose from, we got your favorite devices covered. Skins are made up of high-quality vinyl material, which makes them flexible, durable & grippier."
+    },
+    {
+      "id": "23f2",
+      "name": "Black Steering Wheel Cover",
+      "image": "https://m.media-amazon.com/images/I/71Xg73XTmhL._SX679_.jpg",
+      "price": 53,
+      "currency": "USD",
+      "category": "Product",
+      "description": "Steering wheel covers fit middle-size steering wheels with an outer diameter of 14.5(37cm)to 15\" (38cm).\n\nProtect your hands from burning hot steering wheels in summer and ice cold ones in winter.\nFeel steady and secure at high speeds with its excellent grip for comfortable driving on long journeys.\nInnovative and advanced technologies. (We use the latest thermal transfer technology for printing, which keeps the pattern from fading).\n\nHide existing wear and keep your car looking new, protecting it from further wear and tear.\n\nUniversal Size:\nSuitable for most steering wheels with a diameter of 37-38cm."
+    },
+    {
+      "id": "6ecb",
+      "name": "Single Door Refrigerator",
+      "image": "https://m.media-amazon.com/images/I/51LGKnrcXCL._SX679_.jpg",
+      "price": 10990,
+      "currency": "INR",
+      "category": "Home Product",
+      "description": "Direct-cool Refrigerator: Economical and Stylish with External Bar Handle.\nCapacity 165 Litres: Suitable for bachlors | Freezer Capacity: 15 Ltr , Fresh Food Capacity: 150 Ltr\nEnergy Rating: 1 Star - Low Energy Efficiency\nManufacturer Warranty: 1 year on product, 10 years on compressor.\nNon Inverter Technology"
+    },
+    {
+      "id": "6514",
+      "name": "Backpack with Bottle Pocket",
+      "image": "https://m.media-amazon.com/images/I/51vUis0M1mL._SX679_.jpg",
+      "price": 10,
+      "currency": "USD",
+      "category": "Home Product",
+      "description": "A backpack isn’t just a bag. It’s a cache, a case, a mobile base of sorts. And it is a reflection of the care you’ve put into selecting the ideal loadout of items to keep on you. Introducing Valex, a modern everyday backpacks collections are available in a variety of nice looking colours to express your true self"
+    },
+    {
+      "id": "5759",
+      "name": "Reebok Mens Stride Runner Running Shoe",
+      "image": "https://www.campusshoes.com/cdn/shop/products/11G-677-G-BLK_5_720x.jpg?v=1705644888",
+      "price": 2100,
+      "currency": "INR",
+      "category": "Fashion",
+      "description": "Light weighted and very flexible. It has Breathable Mesh and attractive styling. A lightweight and flexible shoe comprising of a mesh upper for breathability. Full EVA outsole that balances heel cushioning with responsiveness. Best for a daily running session."
+    },
+    {
+      "id": "91ab",
+      "name": "Reebok Mens Nano X2 Tr Adventure Walking Shoe",
+      "image": "https://rukminim2.flixcart.com/image/832/832/ktizdzk0/shoe/y/b/x/7-ws-9310-tying-grey-original-imag6ut3hzm2zyqm.jpeg?q=70&crop=false",
+      "price": 120,
+      "currency": "USD",
+      "category": "Fashion",
+      "description": "Durable rubber outsole with targeted lug pattern for ultimate traction Heel Clip: Supports structure Ripstop upper: for protection, breathability and durability. Heel Collar: Offers improved fit and style Outdoor-inspired: Screen prints and reflective materials drive outdoor wear FloatRide Energy Foam: provides lightweight cushioning and a more responsive ride than original Floatride Foam Nano X2 TR Adventure Shoes Stair sprints. Tricep dips on park benches. Pull ups on the playground."
+    },
+    {
+      "id": "4aed",
+      "name": "Allen Solly Men's T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/51IJlzW9NuL._SY879_.jpg",
+      "price": 500,
+      "currency": "INR",
+      "category": "Mans Clothing",
+      "description": "ABFRL, Aditya Birla Fashion & Retail Ltd. (Madura F&L Division) Regd. Office: Piramal Agastya Corporate Park, Building 'A',4th & 5th Flr, Unit No.401,403,501,502, L.B.S. Road, Kurla, Mumbai - 400 070."
+    },
+    {
+      "name": "Socket Wrench Spanner for home",
+      "image": "https://m.media-amazon.com/images/I/81RnKG8bH-L._SX679_.jpg",
+      "price": 1200,
+      "currency": "INR",
+      "category": "Home Improvement",
+      "description": "Gemii 1/4 Inch Socket Combination 46Pcs Set Diy Repair Tool Kit Model:2462 is suitable for professionals, technicians . The multi function drilling machine can be used to make holes on walls, concrete, metal, wood and plastic. Fix your picture frames, paintings, hangers, lightings etc. without any hassles.",
+      "id": "0e3a"
+    },
+    {
+      "id": "95ac",
+      "name": "Hand Tool Kit for Home & DIY Use",
+      "image": "https://m.media-amazon.com/images/I/81qiHzMneKL._SX679_.jpg",
+      "price": 2112,
+      "currency": "INR",
+      "category": "Home Improvement",
+      "description": "A compact, lightweight and perfect hand tool kit for household DIY tasks & emergency maintenance\nHand Saw,Bit Set Bits size, Adapter, 9LED Torch light,Precision Screwdriver, Tape 3m, Adjustable\nCompact DIY Kit has been developed with a stylish and compact design for all household DIY tasks.\nTypes of Screwdrivers - PH2 x 100mm and SL6 x 100mm are useful in fastening or un-fastening screws\nBoth the nose plier and combination plier can be used for gripping, cutting and stripping of wires."
+    },
+    {
+      "name": "Pavan Photo Laminations Lord Satyanarayana Swamy Bhagwan Satyanarayan Wall Painting Framed Home Decor",
+      "image": "https://m.media-amazon.com/images/I/91ELDigBGZL._SX679_.jpg",
+      "price": 1200,
+      "currency": "INR",
+      "category": "Decoration",
+      "description": "Wall Art Painting Framed Hanging Decoration Item Decorative House Warming Family Anniversary Retirement Wedding Marriage Ceremony Birthday Modern Hall Bedroom Kitchen Living Room Gifting For New Home Housewarming Opening Decor Office Function Gift Pooja Hindu God Picture Religious Poster Bhagwan Photo",
+      "id": "532d"
+    }
+  ],
+  "cart": [
+    {
+      "id": "3a81",
+      "name": "Reebok Mens Nano X2 Tr Adventure Walking Shoe",
+      "image": "https://rukminim2.flixcart.com/image/832/832/ktizdzk0/shoe/y/b/x/7-ws-9310-tying-grey-original-imag6ut3hzm2zyqm.jpeg?q=70&crop=false",
+      "price": 120,
+      "currency": "USD",
+      "category": "Fashion",
+      "description": "Durable rubber outsole with targeted lug pattern for ultimate traction Heel Clip: Supports structure Ripstop upper: for protection, breathability and durability. Heel Collar: Offers improved fit and style Outdoor-inspired: Screen prints and reflective materials drive outdoor wear FloatRide Energy Foam: provides lightweight cushioning and a more responsive ride than original Floatride Foam Nano X2 TR Adventure Shoes Stair sprints. Tricep dips on park benches. Pull ups on the playground.",
+      "quantity": 1,
+      "productId": "91ab",
+      "userId": "b2f2"
+    },
+    {
+      "id": "6807",
+      "name": "Allen Solly Men's T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/51IJlzW9NuL._SY879_.jpg",
+      "price": 500,
+      "currency": "INR",
+      "category": "Mans Clothing",
+      "description": "ABFRL, Aditya Birla Fashion & Retail Ltd. (Madura F&L Division) Regd. Office: Piramal Agastya Corporate Park, Building 'A',4th & 5th Flr, Unit No.401,403,501,502, L.B.S. Road, Kurla, Mumbai - 400 070.",
+      "quantity": 1,
+      "productId": "4aed",
+      "userId": "b2f2"
+    },
+    {
+      "id": "6a54",
+      "name": "Samsung Galaxy S24 ultra",
+      "image": "https://www.thetechoutlook.com/wp-content/uploads/2023/11/Samsung-Galaxy-S24-Ultra-Recent-Renders-Wrong-2.jpg",
+      "price": 121000,
+      "currency": "INR",
+      "description": "This new rumor suggests that Samsung has taken inspiration from the iPhone 15 series and will feature a 24MP default camera resolution on the Galaxy S24 Ultra. This is a significant upgrade from the current Galaxy S23 Ultra, which has a default camera resolution of 12MP.",
+      "category": "mobile",
+      "quantity": 1,
+      "userId": "46d0",
+      "productId": "bfa5"
+    }
+  ]
+}

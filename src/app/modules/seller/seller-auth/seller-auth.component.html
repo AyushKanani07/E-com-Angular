@@ -1,0 +1,54 @@
+<div>
+    <div *ngIf="!showLogin" class="flex flex-col justify-center flex-wrap mx-auto content-center max-w-[1700px] w-[60%] mt-[2%]">
+        <h1 class="text-center">Seller Sign-Up</h1>
+        <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="text-center w-[70%] flex flex-wrap flex-col mt-[4%]">
+            <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Enter your full name" name="name" ngModel>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+              </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="pat@example.com" name="email" ngModel>
+                <mat-icon matSuffix><span class="material-symbols-outlined">mail</span></mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Enter your password</mat-label>
+                <input matInput name="password" [type]="hide ? 'password' : 'text'" ngModel>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" >
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <button type="submit" mat-raised-button color="primary">Sign Up</button>
+            <div class="flex justify-end mt-[9px]">
+                Already have account? <a (click)="openLogin()" class="text-blue-600 cursor-pointer">Click here</a> 
+            </div>
+        </form>
+    </div>
+
+    <div *ngIf="showLogin" class="flex flex-col justify-center flex-wrap mx-auto content-center max-w-[1700px] w-[60%] mt-[2%]">
+        <h1 class="text-center">Seller Log-In</h1>
+        <p class="text-red-600">{{authError}}</p>
+        <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="text-center w-[70%] flex flex-wrap flex-col mt-[4%]">
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="pat@example.com" name="email" ngModel>
+                <mat-icon matSuffix><span class="material-symbols-outlined">mail</span></mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>Enter your password</mat-label>
+                <input matInput name="password" [type]="hide ? 'password' : 'text'" ngModel>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" >
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field>
+              <button type="submit" mat-raised-button color="primary">Log In</button>
+              <div class="flex justify-end mt-[9px] gap-1">
+                Don't have an account? <a (click)="openSignUp()" class="text-blue-600 cursor-pointer">Sign Up</a> 
+            </div>
+        </form>
+    </div>
+</div>

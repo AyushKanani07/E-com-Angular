@@ -1,0 +1,36 @@
+<nav class="flex flex-wrap justify-between">
+    <div [ngSwitch]="menuType">
+        <a *ngSwitchCase="'default'" routerLink="/"><p class="text-[blueviolet] py-[21px] cursor-pointer text-[41px]">E-com</p></a>
+        <a *ngSwitchCase="'seller'" routerLink="seller-home"><p class="text-[blueviolet] py-[21px] cursor-pointer text-[41px]">E-com</p></a>
+        <a *ngSwitchCase="'user'" routerLink="/"><p class="text-[blueviolet] py-[21px] cursor-pointer text-[41px]">E-com</p></a>
+    </div>
+    <div *ngIf="menuType==='default' || 'user'" class="flex flex-1 mx-[5%] mt-[19px]">
+        <input #searchInput type="text" (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search products" class="input focus:border-[blueviolet] focus:border-r-[1px] focus:border-[1px] pl-[12px] flex-1 h-[30px] border-[2px]">
+        <button (click)="submitSearch(searchInput.value)" class="button border-[2px] hover:bg-slate-200 h-[30px] rounded-md px-2">Search</button>
+        <ul *ngIf="searchResult" class="absolute list-item z-10 ml-[12px] mt-[30px] border-[1px] border-[#ddd] w-[555px] bg-slate-300 cursor-pointer">
+            <li *ngFor="let items of searchResult" class="hover:bg-slate-400 px-[9px]">
+                <a (mousedown)="redirectToDetails(items.id)"></a><a>{{items.name}}</a>
+            </li>
+        </ul>
+    </div>
+    <div [ngSwitch]="menuType">
+        <ul *ngSwitchCase="'default'" class="inline-flex">
+            <li class="px-[15px] py-[21px] hover:text-[blueviolet] hover:underline cursor-pointer"><a routerLink="seller-auth">Seller</a></li>
+            <li class="px-[15px] py-[21px] hover:text-[blueviolet] hover:underline cursor-pointer"><a routerLink="/">Home</a></li>
+            <li class="px-[15px] py-[21px] hover:text-[blueviolet] hover:underline cursor-pointer"><a routerLink="/user-auth">Login / SignUp</a></li>
+            <li class="px-[15px] py-[21px] hover:text-[blueviolet] hover:underline cursor-pointer"><a>Cart({{cartItems}})</a></li>
+        </ul>
+        <ul *ngSwitchCase="'user'" class="inline-flex">
+            <li class="px-[15px] py-[21px] hover:text-[blueviolet] hover:underline cursor-pointer"><a routerLink="/">Home</a></li>
+            <li class="px-[15px] py-[21px] hover:text-[blueviolet] hover:underline cursor-pointer"><a (click)="userLogout()">Logout</a></li>
+            <li class="px-[15px] py-[21px] hover:text-[blueviolet] hover:underline cursor-pointer"><a routerLink="cart-page">Cart({{cartItems}})</a></li>
+            <li class="px-[15px] py-[21px] text-[blueviolet] underline cursor-pointer"><a>{{userName | titlecase}}</a></li>
+        </ul>
+        <ul *ngSwitchCase="'seller'" class="inline-flex">
+            <li class="px-[15px] py-[21px] hover:text-[blueviolet] hover:underline cursor-pointer"><a routerLink="seller-add-product">Add Product</a></li>
+            <li class="px-[15px] py-[21px] hover:text-[blueviolet] hover:underline cursor-pointer"><a routerLink="seller-home">List</a></li>
+            <li class="px-[15px] py-[21px] hover:text-[blueviolet] hover:underline cursor-pointer"><a (click)="sellerLogout()">Logout</a></li>
+            <li class="px-[15px] py-[21px] text-[blueviolet] underline cursor-pointer"><a>{{sellerName | titlecase}}</a></li>
+        </ul>
+    </div>
+</nav>

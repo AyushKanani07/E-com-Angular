@@ -1,0 +1,44 @@
+<div class=" mx-auto">
+    <ngb-carousel
+        #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" 
+        (slide)="onSlide($event)" >
+
+        @for (img of popularProducts; track img; let i = $index) {
+            <ng-template ngbSlide>
+                <div class="carousel-caption w-[400px] rounded-md mx-auto bg-[#00000082] text-white">
+                    <h3>{{img.name}}</h3>
+                </div>
+                <a>
+                    <div class="picsum-img-wrapper">
+                        <!-- <img [src]="img" alt="My image {{ i + 1 }} description" /> -->
+                        <a routerLink="/details/{{img.id}}"><img src={{img.image}} alt="{{img.name}}" class="object-contain h-[400px] w-[100%]" /></a>
+                    </div>
+                </a>
+            </ng-template>
+        }
+    </ngb-carousel>
+    <div class="my-[21px]">
+        <h1 class="text-center font-bold">Trendy Products</h1>
+        <div>
+            <div class="flex flex-wrap flex-row justify-center gap-[12px]">
+              <mat-card class="max-w-[270px]" *ngFor="let product of trendyProducts">
+                <a routerLink="/details/{{product.id}}">
+                    <img mat-card-image class="h-[300px] w-[260px]" src={{product.image}} alt="Photo of a Shiba Inu">
+                    
+                    <mat-card-content class="mt-[9px] border-y-[1px] border-[#ddd]">
+                        <div class="mt-[9px]">
+                            <p class="text-center font-medium text-[21px]"> {{product.name}}</p>
+                            <p class="text-center"> Price: {{product.price}} {{product.currency}} </p>
+                        </div>
+                    </mat-card-content>
+                </a>
+                <div class="flex flex-wrap justify-between mx-[4px] my-[4px]">
+                    <a routerLink="/details/{{product.id}}"><button mat-button>View Details</button></a>
+                    <button mat-button>Add to Cart</button>
+                </div>
+                
+              </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

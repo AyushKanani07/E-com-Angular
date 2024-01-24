@@ -1,0 +1,15 @@
+.input{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 40px;
+    
+    outline: none;
+}
+.button{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 0px;
+    border-left: none;
+}
